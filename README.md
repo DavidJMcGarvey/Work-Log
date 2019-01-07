@@ -5,5 +5,4 @@ User is initially prompted with a menu of options. These include:
 a) Add New Entry
 b) Search Existing Entry
 c) Quit Program
-
-Selecting a) will 
+ 
