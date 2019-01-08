@@ -1,9 +1,10 @@
 import datetime
 import csv
+import re
 import pytz
 
 
-FMT = '%m/%d/%Y'
+FMT = '%Y-%m-%d'
 
 
 def welcome():
@@ -20,7 +21,7 @@ def start_menu():
 		add_entry()
 	elif task.lower() == 'b':
 		search_existing()
-	else:
+	elif task.lower() == 'c':
 		print("Thanks for using this work log!")
 
 		
@@ -45,7 +46,7 @@ def add_entry():
 	new_entry.append(entry_name)
 	
 	# Ask user the desired date and append that to new_entry
-	e_date = input("What date was the task completed? Please use MM/DD/YYYY format. ")
+	e_date = input("What date was the task completed? Please use YYYY-MM-DD format. ")
 	entry_date = datetime.datetime.strptime(e_date, FMT)
 	new_entry.append(entry_date)
 	
@@ -68,7 +69,7 @@ def add_entry():
 	
 	
 def search_existing():
-	print("What would you like to search by?")
+	print("\nWhat would you like to search by?")
 	print("\na) By Date\nb) By Range of Dates\nc) By Keyword\nd) By Pattern\ne) Return to Menu\n")
 	search_task = input("> ")
 	if search_task.lower() == 'a':
@@ -84,28 +85,40 @@ def search_existing():
 
 
 def search_date():
-	search = input("\nPlease select desired date: ")
+	search = input("\nPlease select desired date using YYYY-MM-DD format: ")
 	with open('log.csv', newline='') as csvfile:
-		log_reader = csv.reader(csvfile, delimiter='|')
+		log_reader = csv.reader(csvfile, delimiter=',')
 		rows = list(log_reader)
+		search = (search + ' 00:00:00')
 		for row in rows:
-			if search == row:
-				print(row)
+			if search == row[1]:
+				print(rows[0])
 			else:
 				search_existing()
 
 
 def search_range():
 	search = input("Please select desired range of dates: ")
+	pass
 
 
 def search_exact():
 	search = input("Please select desired keyword: ")
+	with open('log.csv', newline='') as csvfile:
+		log_reader = csv.reader(csvfile, delimiter=',')
+		rows = list(log_reader)
+		for row in rows:
+			if search.lower() == row[0] or row[3]:
+				print(rows[0])
+			else:
+				search_existing()
 
 
 def search_pattern():
 	search = input("Please select desired pattern: ")
-
+	with open('log.csv', newline='') as csvfile:
+		data = csvfile.read()
+		print(re.search(search, data))
 
 
 # Code block to prevent script from executing if imported

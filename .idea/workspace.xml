@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
     </list>
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+            <state relative-caret-position="1862">
+              <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -77,6 +75,10 @@
               <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-techdegree-project-03" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -118,14 +120,16 @@
       <workItem from="1545413270376" duration="498000" />
       <workItem from="1546275482674" duration="20931000" />
       <workItem from="1546877604150" duration="198000" />
+      <workItem from="1546877833931" duration="7219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23199000" />
+    <option name="totallyTimeSpent" value="30418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14722222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -164,6 +168,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/log.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
@@ -172,8 +182,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+        <state relative-caret-position="1862">
+          <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
