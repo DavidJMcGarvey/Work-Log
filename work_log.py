@@ -8,12 +8,18 @@ FMT = '%Y-%m-%d'
 
 
 def welcome():
+	"""
+	Asks for their name to be repeated back to them in a personalized welcome
+	"""
 	name = input("Welcome to work. What is your name? ")
 	print("Hello, {}. Please choose a task: ".format(name))
 	start_menu()
 
 
 def start_menu():
+	"""
+	Opens menu with user options
+	"""
 	print("\na) Add New Entry\nb) Search Existing Entry\nc) Quit Program\n")
 	task = input("> ")
 	
@@ -26,6 +32,9 @@ def start_menu():
 
 		
 def write_csv(entry):
+	"""
+	Writes work log input to a csv file
+	"""
 	with open('log.csv', 'a') as csvfile:
 		entry_info = ['name', 'date', 'time', 'note']
 		log_writer = csv.DictWriter(csvfile, fieldnames=entry_info)
@@ -36,8 +45,32 @@ def write_csv(entry):
 			'time': entry[2],
 			'note': entry[3],
 		})
-		
-	
+
+
+def entry_date():
+	"""
+	Ask user for their desired date and if date does not match format an error is raised asking them to try again
+	"""
+	while True:
+		try:
+			date = input("What date was the task completed? Please use YYYY-MM-DD format. ")
+			return datetime.datetime.strptime(date, FMT)
+		except ValueError:
+			print("Please try again using proper format")
+			
+			
+def entry_time():
+	"""
+	Ask user for the time in minutes that their task took, sending back an error message if input is not an integer
+	"""
+	while True:
+		try:
+			time = abs(int(input("How many minutes did the task take? (negative numbers will be converted to positive) ")))
+			return time
+		except ValueError:
+			print("Please try again using an integer to represent minutes spent on task ")
+
+
 def add_entry():
 	new_entry = []
 	
@@ -46,14 +79,11 @@ def add_entry():
 	new_entry.append(entry_name)
 	
 	# Ask user the desired date and append that to new_entry
-	e_date = input("What date was the task completed? Please use YYYY-MM-DD format. ")
-	entry_date = datetime.datetime.strptime(e_date, FMT)
-	new_entry.append(entry_date)
+	new_entry.append(entry_date())
 	
 	# Ask user the desired time in minutes and append that to new_entry
-	entry_time = input("How many minutes did the task take? ")
-	new_entry.append(int(entry_time))
-	
+	new_entry.append(entry_time())
+
 	# Ask user the desired notes and append that to new_entry
 	entry_notes = input("Would you like to add any additional notes? (optional) ")
 	if entry_notes != '':
@@ -66,8 +96,8 @@ def add_entry():
 	
 	# User is brought back to menu upon log completion
 	start_menu()
-	
-	
+
+
 def search_existing():
 	print("\nWhat would you like to search by?")
 	print("\na) By Date\nb) By Range of Dates\nc) By Keyword\nd) By Pattern\ne) Return to Menu\n")
