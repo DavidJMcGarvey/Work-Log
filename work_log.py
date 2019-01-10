@@ -11,8 +11,8 @@ def welcome():
 	"""
 	Asks for their name to be repeated back to them in a personalized welcome
 	"""
-	name = input("Welcome to work. What is your name? ")
-	print("Hello, {}. Please choose a task: ".format(name))
+	# name = input("Welcome to work. What is your name? ")
+	# print("Hello, {}. Please choose a task: ".format(name))
 	start_menu()
 
 
@@ -65,23 +65,26 @@ def entry_time():
 	"""
 	while True:
 		try:
-			time = abs(int(input("How many minutes did the task take? (negative numbers will be converted to positive) ")))
+			time = abs(int(input("How many minutes did the task take? ")))
 			return time
 		except ValueError:
 			print("Please try again using an integer to represent minutes spent on task ")
 
 
 def add_entry():
+	"""
+	Takes user input and appends it to an empty list that will be written to CSV upon log completion
+	"""
 	new_entry = []
 	
 	# Ask user the desired task name and append that to new_entry
 	entry_name = input("What is the title of the task? ")
 	new_entry.append(entry_name)
 	
-	# Ask user the desired date and append that to new_entry
+	# Append user input from entry_date() to new_entry
 	new_entry.append(entry_date())
 	
-	# Ask user the desired time in minutes and append that to new_entry
+	# Append user input from entry_time() to new_entry
 	new_entry.append(entry_time())
 
 	# Ask user the desired notes and append that to new_entry
@@ -91,14 +94,28 @@ def add_entry():
 	else:
 		new_entry.append('')
 	
-	# Write entry to log.csv
+	# Write new_entry to log.csv
 	write_csv(new_entry)
-	
+	display_entry(new_entry)
 	# User is brought back to menu upon log completion
 	start_menu()
 
 
+def display_entry(entry):
+	with open('log.csv', 'r') as csvfile:
+		entry_info = ['name', 'date', 'time', 'note']
+		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
+		for row in log_reader:
+			print("Task name: " + row['name'])
+			print("Task date: " + row['date'])
+			print("Task minutes: " + row['time'])
+			print("Task notes: " + row['note'])
+		
+	
 def search_existing():
+	"""
+	Opens menu with different options for searching entries
+	"""
 	print("\nWhat would you like to search by?")
 	print("\na) By Date\nb) By Range of Dates\nc) By Keyword\nd) By Pattern\ne) Return to Menu\n")
 	search_task = input("> ")
@@ -115,16 +132,19 @@ def search_existing():
 
 
 def search_date():
-	search = input("\nPlease select desired date using YYYY-MM-DD format: ")
-	with open('log.csv', newline='') as csvfile:
-		log_reader = csv.reader(csvfile, delimiter=',')
-		rows = list(log_reader)
-		search = (search + ' 00:00:00')
-		for row in rows:
-			if search == row[1]:
-				print(rows[0])
-			else:
-				search_existing()
+	"""
+	Search based on exact date
+	"""
+	# search = input("\nPlease select desired date using YYYY-MM-DD format: ")
+	# with open('log.csv', newline='') as csvfile:
+	# 	log_reader = csv.reader(csvfile, delimiter=',')
+	# 	rows = list(log_reader)
+	# 	search = (search + ' 00:00:00')
+	# 	for row in rows:
+	# 		if search == row[1]:
+	# 			display_entry(row[0])
+	# 		else:
+	# 			search_existing()
 
 
 def search_range():
