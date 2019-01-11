@@ -3,6 +3,8 @@ import csv
 import re
 import pytz
 
+# TODO:
+# Uncomment welcome statement
 
 FMT = '%Y-%m-%d'
 
@@ -26,7 +28,7 @@ def start_menu():
 	if task.lower() == 'a':
 		add_entry()
 	elif task.lower() == 'b':
-		search_existing()
+		search_menu()
 	elif task.lower() == 'c':
 		print("Thanks for using this work log!")
 
@@ -96,7 +98,7 @@ def add_entry():
 	
 	# Write new_entry to log.csv
 	write_csv(new_entry)
-	display_entry(new_entry)
+
 	# User is brought back to menu upon log completion
 	start_menu()
 
@@ -106,13 +108,17 @@ def display_entry(entry):
 		entry_info = ['name', 'date', 'time', 'note']
 		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
 		for row in log_reader:
-			print("Task name: " + row['name'])
-			print("Task date: " + row['date'])
-			print("Task minutes: " + row['time'])
-			print("Task notes: " + row['note'])
-		
-	
-def search_existing():
+			if entry == row['date']:
+				print("Task name: " + row['name'])
+				print("Task date: " + row['date'])
+				print("Task minutes: " + row['time'])
+				print("Task notes: " + row['note'])
+			else:
+				print("Sorry bud")
+		search_menu()
+				
+
+def search_menu():
 	"""
 	Opens menu with different options for searching entries
 	"""
@@ -135,7 +141,10 @@ def search_date():
 	"""
 	Search based on exact date
 	"""
-	# search = input("\nPlease select desired date using YYYY-MM-DD format: ")
+	search = input("\nPlease select desired date using YYYY-MM-DD format: ")
+	search = (search + ' 00:00:00')
+	display_entry(search)
+	search_menu()
 	# with open('log.csv', newline='') as csvfile:
 	# 	log_reader = csv.reader(csvfile, delimiter=',')
 	# 	rows = list(log_reader)
@@ -161,7 +170,7 @@ def search_exact():
 			if search.lower() == row[0] or row[3]:
 				print(rows[0])
 			else:
-				search_existing()
+				search_menu()
 
 
 def search_pattern():

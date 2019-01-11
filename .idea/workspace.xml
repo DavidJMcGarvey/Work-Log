@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
     </list>
@@ -29,10 +28,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="107" column="8" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+            <state relative-caret-position="320">
+              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#88#211#0" />
+                <element signature="e#636#899#0" />
+                <element signature="e#966#1303#0" />
+                <element signature="e#1335#1660#0" />
+                <element signature="e#1732#2415#0" />
+                <element signature="e#2912#3371#0" />
+                <element signature="e#2786#2848#0" />
+                <element signature="e#2872#3154#0" />
+                <element signature="e#3180#3332#0" />
               </folding>
             </state>
           </provider>
@@ -123,18 +131,18 @@
       <workItem from="1546877604150" duration="198000" />
       <workItem from="1546877833931" duration="7330000" />
       <workItem from="1546985673031" duration="3521000" />
-      <workItem from="1547052189226" duration="17897000" />
+      <workItem from="1547052189226" duration="22753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51947000" />
+    <option name="totallyTimeSpent" value="56803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14722222" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10138889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -148,7 +156,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.47943595" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20564042" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -184,6 +192,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/log.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -192,10 +207,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="107" column="8" lean-forward="true" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+        <state relative-caret-position="320">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#88#211#0" />
+            <element signature="e#636#899#0" />
+            <element signature="e#966#1303#0" />
+            <element signature="e#1335#1660#0" />
+            <element signature="e#1732#2415#0" />
+            <element signature="e#2912#3371#0" />
+            <element signature="e#2786#2848#0" />
+            <element signature="e#2872#3154#0" />
+            <element signature="e#3180#3332#0" />
           </folding>
         </state>
       </provider>
