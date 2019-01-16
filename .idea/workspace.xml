@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="" />
+    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +27,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+            <state relative-caret-position="370">
+              <caret line="171" column="72" lean-forward="true" selection-start-line="171" selection-start-column="72" selection-end-line="171" selection-end-column="72" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#88#211#0" />
-                <element signature="e#636#899#0" />
-                <element signature="e#966#1303#0" />
-                <element signature="e#1335#1660#0" />
-                <element signature="e#1732#2415#0" />
+                <element signature="e#2543#2966#0" />
                 <element signature="e#2912#3371#0" />
-                <element signature="e#2786#2848#0" />
-                <element signature="e#2872#3154#0" />
-                <element signature="e#3180#3332#0" />
+                <element signature="e#3474#4095#0" />
+                <element signature="e#4503#4937#0" />
+                <element signature="e#4807#5356#0" />
               </folding>
             </state>
           </provider>
@@ -128,12 +126,12 @@
       <workItem from="1546877604150" duration="198000" />
       <workItem from="1546877833931" duration="7330000" />
       <workItem from="1546985673031" duration="3521000" />
-      <workItem from="1547052189226" duration="23075000" />
+      <workItem from="1547052189226" duration="32910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57125000" />
+    <option name="totallyTimeSpent" value="66960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -164,6 +162,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/work_log.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/work_log.py</url>
+          <line>167</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
@@ -204,19 +218,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        <state relative-caret-position="370">
+          <caret line="171" column="72" lean-forward="true" selection-start-line="171" selection-start-column="72" selection-end-line="171" selection-end-column="72" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#88#211#0" />
-            <element signature="e#636#899#0" />
-            <element signature="e#966#1303#0" />
-            <element signature="e#1335#1660#0" />
-            <element signature="e#1732#2415#0" />
+            <element signature="e#2543#2966#0" />
             <element signature="e#2912#3371#0" />
-            <element signature="e#2786#2848#0" />
-            <element signature="e#2872#3154#0" />
-            <element signature="e#3180#3332#0" />
+            <element signature="e#3474#4095#0" />
+            <element signature="e#4503#4937#0" />
+            <element signature="e#4807#5356#0" />
           </folding>
         </state>
       </provider>
