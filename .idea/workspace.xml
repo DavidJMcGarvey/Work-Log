@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="" />
+    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +27,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="171" column="72" lean-forward="true" selection-start-line="171" selection-start-column="72" selection-end-line="171" selection-end-column="72" />
+            <state relative-caret-position="695">
+              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#2543#2966#0" />
-                <element signature="e#2912#3371#0" />
                 <element signature="e#3474#4095#0" />
                 <element signature="e#4503#4937#0" />
                 <element signature="e#4807#5356#0" />
@@ -124,12 +124,12 @@
       <workItem from="1546877604150" duration="198000" />
       <workItem from="1546877833931" duration="7330000" />
       <workItem from="1546985673031" duration="3521000" />
-      <workItem from="1547052189226" duration="32910000" />
+      <workItem from="1547052189226" duration="33091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66960000" />
+    <option name="totallyTimeSpent" value="67141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -166,12 +166,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>167</line>
+          <line>166</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -216,12 +211,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="171" column="72" lean-forward="true" selection-start-line="171" selection-start-column="72" selection-end-line="171" selection-end-column="72" />
+        <state relative-caret-position="695">
+          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#2543#2966#0" />
-            <element signature="e#2912#3371#0" />
             <element signature="e#3474#4095#0" />
             <element signature="e#4503#4937#0" />
             <element signature="e#4807#5356#0" />

@@ -122,7 +122,6 @@ def display_entry(entry):
 		search_menu()
 		
 				
-
 def search_menu():
 	"""
 	Opens menu with different options for searching entries
