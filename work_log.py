@@ -3,8 +3,6 @@ import csv
 import re
 import pytz
 
-# TODO:
-# Uncomment welcome statement
 
 FMT = '%Y-%m-%d'
 
@@ -13,8 +11,8 @@ def welcome():
 	"""
 	Asks for their name to be repeated back to them in a personalized welcome
 	"""
-	# name = input("Welcome to work. What is your name? ")
-	# print("Hello, {}. Please choose a task: ".format(name))
+	name = input("Welcome to work. What is your name? ")
+	print("Hello, {}. Please choose a task: ".format(name))
 	start_menu()
 
 
@@ -47,6 +45,7 @@ def write_csv(entry):
 			'time': entry[2],
 			'note': entry[3],
 		})
+
 
 
 def entry_date():
@@ -121,7 +120,7 @@ def display_entry(entry):
 				print('Sorry bud')
 		search_menu()
 		
-				
+		
 def search_menu():
 	"""
 	Opens menu with different options for searching entries
@@ -165,6 +164,9 @@ def search_date():
 
 
 def search_range():
+	"""
+	Search based on a range of dates
+	"""
 	date_1 = input("Please first date in range of dates using YYYY-MM-DD format: ")
 	date_1 = get_datetime(date_1)
 	date_2 = input("Please second date in range of dates using YYYY-MM-DD format: ")
@@ -187,6 +189,9 @@ def search_range():
 		
 	
 def search_exact():
+	"""
+	Search based on exact keyword
+	"""
 	search = input("Please select desired keyword: ")
 	with open('log.csv', 'r') as csvfile:
 		entry_info = ['name', 'date', 'time', 'note']
@@ -219,6 +224,5 @@ def search_pattern():
 		search_menu()
 				
 
-# Code block to prevent script from executing if imported
 if __name__ == '__main__':
 	welcome()
