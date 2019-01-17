@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +15,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+            <state relative-caret-position="266">
+              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#88#211#0" />
+                <element signature="e#233#483#0" />
+                <element signature="e#672#982#0" />
+                <element signature="e#966#1303#0" />
+                <element signature="e#1335#1660#0" />
+                <element signature="e#1701#1745#0" />
+                <element signature="e#1732#2415#0" />
+                <element signature="e#2814#2978#0" />
+                <element signature="e#2912#3371#0" />
+                <element signature="e#3575#4216#0" />
+                <element signature="e#4210#4923#0" />
+                <element signature="e#4655#5058#0" />
+                <element signature="e#5134#5609#0" />
               </folding>
             </state>
           </provider>
@@ -127,12 +138,12 @@
       <workItem from="1546877604150" duration="198000" />
       <workItem from="1546877833931" duration="7330000" />
       <workItem from="1546985673031" duration="3521000" />
-      <workItem from="1547052189226" duration="38745000" />
+      <workItem from="1547052189226" duration="40949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72795000" />
+    <option name="totallyTimeSpent" value="74999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -214,10 +225,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        <state relative-caret-position="266">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#88#211#0" />
+            <element signature="e#233#483#0" />
+            <element signature="e#672#982#0" />
+            <element signature="e#966#1303#0" />
+            <element signature="e#1335#1660#0" />
+            <element signature="e#1701#1745#0" />
+            <element signature="e#1732#2415#0" />
+            <element signature="e#2814#2978#0" />
+            <element signature="e#2912#3371#0" />
+            <element signature="e#3575#4216#0" />
+            <element signature="e#4210#4923#0" />
+            <element signature="e#4655#5058#0" />
+            <element signature="e#5134#5609#0" />
           </folding>
         </state>
       </provider>
