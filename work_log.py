@@ -2,7 +2,6 @@ import datetime
 import csv
 import re
 
-
 FMT = '%Y-%m-%d'
 
 
@@ -28,8 +27,10 @@ def start_menu():
 		search_menu()
 	elif task.lower() == 'c':
 		print("Thanks for using this work log!")
+	else:
+		start_menu()
 
-		
+
 def write_csv(entry):
 	"""
 	Writes work log input to a csv file
@@ -56,8 +57,8 @@ def entry_date():
 			return datetime.datetime.strptime(date, FMT)
 		except ValueError:
 			print("Please try again using proper format")
-			
-			
+
+
 def entry_time():
 	"""
 	Ask user for the time in minutes that their task took, sending back an error message if input is not an integer
@@ -92,7 +93,7 @@ def add_entry():
 	
 	# Append user input from entry_time() to new_entry
 	new_entry.append(entry_time())
-
+	
 	# Ask user the desired notes and append that to new_entry
 	entry_notes = input("Would you like to add any additional notes? (optional) ")
 	if entry_notes != '':
@@ -102,35 +103,38 @@ def add_entry():
 	
 	# Write new_entry to log.csv
 	write_csv(new_entry)
-
+	
 	# User is brought back to menu upon log completion
 	start_menu()
 
 
 def display_entry(row):
+	"""
+	Prints entry in uniform format
+	"""
 	print("\nTask name: " + row['name'])
 	print("Task date: " + row['date'])
 	print("Task minutes: " + row['time'])
 	print("Task notes: " + row['note'])
 
-	search_menu()
-		
-		
+
 def search_menu():
 	"""
 	Opens menu with different options for searching entries
 	"""
 	print("\nWhat would you like to search by?")
-	print("\na) By Date\nb) By Range of Dates\nc) By Keyword\nd) By Pattern\ne) Return to Menu\n")
+	print("\na) By Date\nb) By Minutes\nc) By Keyword\nd) By Pattern\ne) By Range of Dates\nf) Return to Menu\n")
 	search_task = input("> ")
 	if search_task.lower() == 'a':
 		search_date()
 	elif search_task.lower() == 'b':
-		search_range()
+		search_time()
 	elif search_task.lower() == 'c':
 		search_exact()
 	elif search_task.lower() == 'd':
 		search_pattern()
+	elif search_task.lower() == 'e':
+		search_range()
 	else:
 		start_menu()
 
@@ -144,17 +148,37 @@ def search_date():
 	with open('log.csv', 'r') as csvfile:
 		entry_info = ['name', 'date', 'time', 'note']
 		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-		while True:
-			for row in log_reader:
-				if search == row['date']:
+		for row in log_reader:
+			if search == row['date']:
+				found = True
+				if found:
 					display_entry(row)
 					break
-				else:
+				elif not found:
 					print("Sorry, date not found. Please try again.")
-				
-			search_menu()
+		
+		search_menu()
 
 
+def search_time():
+	"""
+	Search based on minutes spent on task
+	"""
+	search = input("\nPlease type the minutes spent on desired task: ")
+	with open('log.csv', 'r') as csvfile:
+		entry_info = ['name', 'date', 'time', 'note']
+		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
+		for row in log_reader:
+			if search == row['time']:
+				found = True
+				if found:
+					display_entry(row)
+				if not found:
+					print("Sorry, no entries took that amount of time. Please try again.")
+			
+		search_menu()
+		
+		
 def search_range():
 	"""
 	Search based on a range of dates
@@ -167,16 +191,16 @@ def search_range():
 		entry_info = ['name', 'date', 'time', 'note']
 		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
 		for row in log_reader:
-			if row['date'] == date_1 or date_2:
-				display_entry(row)
-				break
-			else:
-				print("Sorry, one or both dates not found. Please try again.")
-				break
-
-		search_menu()
+			if date_1 < row['date'] < date_2:
+				found = True
+				if found:
+					display_entry(row)
+				elif not found:
+					print("Sorry, one or both dates not found. Please try again.")
 		
-	
+		search_menu()
+
+
 def search_exact():
 	"""
 	Search based on exact keyword
@@ -186,16 +210,22 @@ def search_exact():
 		entry_info = ['name', 'date', 'time', 'note']
 		log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
 		for row in log_reader:
-			if search == row['name'] or search == row['note']:
+			found = False
+			if search.lower() == row['name'].lower():
+				found = True
+			if found:
 				display_entry(row)
-			else:
-				print("Sorry, keyword not found. Please try again.")
+				break
+			
+			elif not found:
+				print("\nSorry, keyword not found. Please try again.")
+
 		search_menu()
 
 
 def search_pattern():
 	"""
-	Search based on regex pattern
+	Search based on regex pattern                                        
 	"""
 	search = input("Please select desired reg.exe pattern: ")
 	with open('log.csv', newline='') as csvfile:
@@ -208,7 +238,7 @@ def search_pattern():
 			else:
 				print("Sorry, regex pattern not found. Please try again.")
 		search_menu()
-				
+
 
 if __name__ == '__main__':
 	welcome()

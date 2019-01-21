@@ -11,20 +11,20 @@ a) Add New Entry
 b) Search Existing Entry
 c) Quit Program
 
-If user selects a) Add New Entry:
+Options if user selects a) Add New Entry:
     - Title
     - Date
     - Time (in minutes)
     - Notes (optional)
     
-If user selects b) Search Existing Entry:
+Options if user selects b) Search Existing Entry:
     - Exact Date
     - Range of Dates
     - Exact Keyword
     - Regex Pattern
     - Return to Menu
 
-Program is terminated if user selects c) Duh
+Program is terminated if user selects c) Quit Program
 
 
-David McGarvey 01/17/2019
+David McGarvey 01/17/2019       
