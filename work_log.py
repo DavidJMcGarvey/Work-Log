@@ -3,6 +3,9 @@ import datetime
 import re
 
 FMT = '%Y-%m-%d'
+red_start = "\33[91m"
+bw_start = "\33[37m\33[44m"
+color_stop = "\33[0m"
 
 
 def welcome():
@@ -30,7 +33,7 @@ def start_menu():
             print("Thanks for using this work log!")
             break
         else:
-            print("That was not an option")
+            print(red_start + "That was not an option" + color_stop)
 
 
 def write_csv(entry):
@@ -58,7 +61,7 @@ def entry_date():
             date = input("What date was the task completed? Please use YYYY-MM-DD format. ")
             return datetime.datetime.strptime(date, FMT)
         except ValueError:
-            print("Please try again using proper format")
+            print(red_start + "Please try again using proper format" + color_stop)
 
 
 def entry_time():
@@ -70,7 +73,7 @@ def entry_time():
             time = abs(int(input("How many minutes did the task take? ")))
             return time
         except ValueError:
-            print("Please try again using an integer to represent minutes spent on task ")
+            print(red_start + "Please try again using an integer to represent minutes spent on task." + color_stop)
 
 
 def get_datetime(date):
@@ -107,7 +110,7 @@ def add_entry():
     write_csv(new_entry)
     
     # User is brought back to menu upon log completion
-    start_menu()
+    return None
 
 
 def display_entries(rows):
@@ -119,15 +122,10 @@ def display_entry(row):
     """
     Prints entry in uniform format
     """
-    # print("\nTask name: " + row[0])
-    # print("Task date: " + row[1])
-    # print("Task minutes: " + row[2])
-    # print("Task notes: " + row[3])
-
-    print("\nTask name: " + row['name'])
-    print("Task date: " + row['date'])
-    print("Task minutes: " + row['time'])
-    print("Task notes: " + row['note'])
+    print("\n" + bw_start + "Task name: " + row['name'] + color_stop)
+    print(bw_start + "Task date: " + row['date'] + color_stop)
+    print(bw_start + "Task minutes: " + row['time'] + color_stop)
+    print(bw_start + "Task notes: " + row['note'] + color_stop + "\n")
 
 
 def search_menu():
@@ -136,7 +134,7 @@ def search_menu():
     """
     while True:
         print("\nWhat would you like to search by?")
-        print("\na) By Date\nb) By Minutes\nc) By Keyword\nd) By Pattern\ne) By Range of Dates\nf) Return to Menu\n")
+        print("\na) By Date\nb) By Minutes\nc) By Keyword\nd) By Pattern\ne) Display All Entries\nf) Return to Menu\n")
         search_task = input("> ")
         if search_task.lower() == 'a':
             search_date()
@@ -147,9 +145,11 @@ def search_menu():
         elif search_task.lower() == 'd':
             search_pattern()
         elif search_task.lower() == 'e':
-            search_range()
+            show_all()
+        elif search_task.lower() == 'f':
+            return None
         else:
-            print("That was not an option")
+            print(red_start + "That was not an option" + color_stop)
 
 
 def search_date():
@@ -161,33 +161,20 @@ def search_date():
     with open('log.csv', 'r') as csvfile:
         entry_info = ['name', 'date', 'time', 'note']
         log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-        
         results = []
         for row in log_reader:
             if search == row['date']:
                 result = row
                 results.append(row)
-                break
-            else:
+            elif search != row['date'] and results == []:
                 result = None
-                    
+
         if not result:
-            print("Sorry, date not found. Please try again.")
+            print(red_start + "\nSorry, date not found. Please try again." + color_stop)
         else:
             display_entries(results)
-
-
-        #search_menu()
-    
-    # pagenation!
-    # idx = 0
-    # while True:
-    #     display(result[idx])
-    #     input("[n] to go to Next")
-    #     if usr_input == 'n':
-    #         idx +1
-    #     elif usr_input == 'p':
-    #         idx -=1
+            
+    return None
     
 
 def search_time():
@@ -195,40 +182,24 @@ def search_time():
     Search based on minutes spent on task
     """
     search = input("\nPlease type the minutes spent on desired task: ")
-    # with open('log.csv', 'r') as csvfile:
-    #     entry_info = ['name', 'date', 'time', 'note']
-    #     log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-    for row in open():
-        if search == row['time']:
-            found = True
-            if found:
-                display_entry(row)
-            if not found:
-                print("Sorry, no entries took that amount of time. Please try again.")
-
-    search_menu()
-        
-        
-def search_range():
-    """
-    Search based on a range of dates
-    """
-    date_1 = input("Please first date in range of dates using YYYY-MM-DD format: ")
-    date_1 = get_datetime(date_1)
-    date_2 = input("Please second date in range of dates using YYYY-MM-DD format: ")
-    date_2 = get_datetime(date_2)
     with open('log.csv', 'r') as csvfile:
         entry_info = ['name', 'date', 'time', 'note']
         log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
+
+        results = []
         for row in log_reader:
-            if date_1 < row['date'] < date_2:
-                found = True
-                if found:
-                    display_entry(row)
-                elif not found:
-                    print("Sorry, one or both dates not found. Please try again.")
-        
-        search_menu()
+            if search == row['time']:
+                result = row
+                results.append(row)
+            elif search != row['time'] and results == []:
+                result = None
+
+        if not result:
+            print(red_start + "\nSorry, no entries took that amount of time. Please try again." + color_stop)
+        else:
+            display_entries(results)
+
+    return None
 
 
 def search_exact():
@@ -239,18 +210,27 @@ def search_exact():
     with open('log.csv', 'r') as csvfile:
         entry_info = ['name', 'date', 'time', 'note']
         log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-        for row in log_reader:
-            found = False
-            if search.lower() == row['name'].lower():
-                found = True
-            if found:
-                display_entry(row)
-                break
-            
-            elif not found:
-                print("\nSorry, keyword not found. Please try again.")
 
-        search_menu()
+        results = []
+        for row in log_reader:
+            # import pdb; pdb.set_trace()
+            if search == row['name']:
+                result = row
+                results.append(row)
+            elif search == row['note']:
+                result = row
+                results.append(row)
+            elif search != row['name'] and results == []:
+                result = None
+            elif search != row['note'] and results == []:
+                result = None
+
+        if result:
+            display_entries(results)
+        else:
+            print(red_start + "\nSorry, no keyword found. Please try again." + color_stop)
+            
+    return None
 
 
 def search_pattern():
@@ -266,8 +246,21 @@ def search_pattern():
             if search == row['name'] or row['date'] or row['time'] or row['note']:
                 display_entry(row)
             else:
-                print("Sorry, regex pattern not found. Please try again.")
+                print(red_start + "\nSorry, regex pattern not found. Please try again." + color_stop)
         search_menu()
+
+
+def show_all():
+    with open('log.csv', newline='') as csvfile:
+        entry_info = ['name', 'date', 'time', 'note']
+        log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
+        results = []
+        for row in log_reader:
+            result = row
+            results.append(result)
+        display_entries(results)
+
+    return None
 
 
 if __name__ == '__main__':

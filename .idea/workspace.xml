@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="" />
+    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,23 +17,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+            <state relative-caret-position="512">
+              <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#76#299#0" />
-                <element signature="e#324#803#0" />
+                <element signature="e#412#872#0" />
                 <element signature="e#840#1225#0" />
-                <element signature="e#1250#1639#0" />
-                <element signature="e#1664#2037#0" />
+                <element signature="e#1277#1677#0" />
+                <element signature="e#1691#2081#0" />
                 <element signature="e#2068#2177#0" />
-                <element signature="e#2201#3077#0" />
+                <element signature="e#2278#3153#0" />
                 <element signature="e#3110#3153#0" />
-                <element signature="e#3183#3391#0" />
-                <element signature="e#3417#4009#0" />
-                <element signature="e#5009#5022#0" />
-                <element signature="e#5060#5683#0" />
-                <element signature="e#5726#6507#0" />
+                <element signature="e#3146#3526#0" />
+                <element signature="e#3734#4498#0" />
+                <element signature="e#5282#6044#0" />
+                <element signature="e#7754#8421#0" />
+                <element signature="e#7422#7769#0" />
               </folding>
             </state>
           </provider>
@@ -42,7 +46,7 @@
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -64,9 +68,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find />
+      <find>gbc_start</find>
+      <find>yel_start + bbc_start</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>yel_start</replace>
+      <replace>bw_start</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -89,7 +97,24 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-techdegree-project-03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -129,12 +154,12 @@
       <workItem from="1546985673031" duration="3521000" />
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
-      <workItem from="1548100761007" duration="13404000" />
+      <workItem from="1548100761007" duration="29185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104634000" />
+    <option name="totallyTimeSpent" value="120415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -144,7 +169,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -165,22 +190,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>189</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>211</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
@@ -220,29 +229,29 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+        <state relative-caret-position="512">
+          <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#76#299#0" />
-            <element signature="e#324#803#0" />
+            <element signature="e#412#872#0" />
             <element signature="e#840#1225#0" />
-            <element signature="e#1250#1639#0" />
-            <element signature="e#1664#2037#0" />
+            <element signature="e#1277#1677#0" />
+            <element signature="e#1691#2081#0" />
             <element signature="e#2068#2177#0" />
-            <element signature="e#2201#3077#0" />
+            <element signature="e#2278#3153#0" />
             <element signature="e#3110#3153#0" />
-            <element signature="e#3183#3391#0" />
-            <element signature="e#3417#4009#0" />
-            <element signature="e#5009#5022#0" />
-            <element signature="e#5060#5683#0" />
-            <element signature="e#5726#6507#0" />
+            <element signature="e#3146#3526#0" />
+            <element signature="e#3734#4498#0" />
+            <element signature="e#5282#6044#0" />
+            <element signature="e#7754#8421#0" />
+            <element signature="e#7422#7769#0" />
           </folding>
         </state>
       </provider>
