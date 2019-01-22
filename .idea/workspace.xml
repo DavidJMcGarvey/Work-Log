@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="" />
+    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +17,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="170" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="550">
+              <caret line="191" column="45" lean-forward="true" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#88#211#0" />
-                <element signature="e#303#611#0" />
-                <element signature="e#672#982#0" />
-                <element signature="e#966#1303#0" />
-                <element signature="e#1335#1660#0" />
-                <element signature="e#1701#1745#0" />
-                <element signature="e#1732#2415#0" />
-                <element signature="e#2626#2823#0" />
-                <element signature="e#2839#3355#0" />
-                <element signature="e#4210#4923#0" />
-                <element signature="e#4541#5276#0" />
-                <element signature="e#5134#5609#0" />
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#76#299#0" />
+                <element signature="e#324#803#0" />
+                <element signature="e#840#1225#0" />
+                <element signature="e#1250#1639#0" />
+                <element signature="e#1664#2037#0" />
+                <element signature="e#2068#2177#0" />
+                <element signature="e#2201#3077#0" />
+                <element signature="e#3110#3153#0" />
+                <element signature="e#3183#3391#0" />
+                <element signature="e#3417#4009#0" />
+                <element signature="e#5009#5022#0" />
+                <element signature="e#5060#5683#0" />
+                <element signature="e#5726#6507#0" />
               </folding>
             </state>
           </provider>
@@ -36,13 +41,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -60,15 +65,23 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/log.csv" />
         <option value="$PROJECT_DIR$/work_log.py" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -80,30 +93,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-techdegree-project-03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -135,12 +131,14 @@
       <workItem from="1546877604150" duration="198000" />
       <workItem from="1546877833931" duration="7330000" />
       <workItem from="1546985673031" duration="3521000" />
-      <workItem from="1547052189226" duration="56681000" />
+      <workItem from="1547052189226" duration="56733000" />
+      <workItem from="1548089990736" duration="447000" />
+      <workItem from="1548100761007" duration="12968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90731000" />
+    <option name="totallyTimeSpent" value="104198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -177,12 +175,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>181</line>
+          <line>189</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/work_log.py</url>
-          <line>203</line>
+          <line>211</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -209,13 +207,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Project-1-Guess-the-Number-master/guessing game version 3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Project-1-Guess-the-Number-master/guessing game version 3.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -227,33 +219,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="550">
+          <caret line="191" column="45" lean-forward="true" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#88#211#0" />
-            <element signature="e#303#611#0" />
-            <element signature="e#672#982#0" />
-            <element signature="e#966#1303#0" />
-            <element signature="e#1335#1660#0" />
-            <element signature="e#1701#1745#0" />
-            <element signature="e#1732#2415#0" />
-            <element signature="e#2626#2823#0" />
-            <element signature="e#2839#3355#0" />
-            <element signature="e#4210#4923#0" />
-            <element signature="e#4541#5276#0" />
-            <element signature="e#5134#5609#0" />
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#76#299#0" />
+            <element signature="e#324#803#0" />
+            <element signature="e#840#1225#0" />
+            <element signature="e#1250#1639#0" />
+            <element signature="e#1664#2037#0" />
+            <element signature="e#2068#2177#0" />
+            <element signature="e#2201#3077#0" />
+            <element signature="e#3110#3153#0" />
+            <element signature="e#3183#3391#0" />
+            <element signature="e#3417#4009#0" />
+            <element signature="e#5009#5022#0" />
+            <element signature="e#5060#5683#0" />
+            <element signature="e#5726#6507#0" />
           </folding>
         </state>
       </provider>
