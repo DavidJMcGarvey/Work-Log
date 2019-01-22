@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.csv" beforeDir="false" afterPath="$PROJECT_DIR$/log.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
+            <state relative-caret-position="303">
+              <caret line="177" column="36" lean-forward="true" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#76#299#0" />
@@ -29,10 +27,10 @@
                 <element signature="e#2068#2177#0" />
                 <element signature="e#2278#3153#0" />
                 <element signature="e#3110#3153#0" />
-                <element signature="e#3146#3526#0" />
                 <element signature="e#3734#4498#0" />
+                <element signature="e#4436#5257#0" />
                 <element signature="e#5282#6044#0" />
-                <element signature="e#7754#8421#0" />
+                <element signature="e#6109#6797#0" />
                 <element signature="e#7422#7769#0" />
               </folding>
             </state>
@@ -89,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -154,15 +152,15 @@
       <workItem from="1546985673031" duration="3521000" />
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
-      <workItem from="1548100761007" duration="29185000" />
+      <workItem from="1548100761007" duration="32480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120415000" />
+    <option name="totallyTimeSpent" value="123710000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10138889" />
@@ -190,6 +188,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/work_log.py</url>
+          <line>235</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/CSV-Groovy.csv.groovy">
@@ -235,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
+        <state relative-caret-position="303">
+          <caret line="177" column="36" lean-forward="true" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#76#299#0" />
@@ -247,10 +256,10 @@
             <element signature="e#2068#2177#0" />
             <element signature="e#2278#3153#0" />
             <element signature="e#3110#3153#0" />
-            <element signature="e#3146#3526#0" />
             <element signature="e#3734#4498#0" />
+            <element signature="e#4436#5257#0" />
             <element signature="e#5282#6044#0" />
-            <element signature="e#7754#8421#0" />
+            <element signature="e#6109#6797#0" />
             <element signature="e#7422#7769#0" />
           </folding>
         </state>

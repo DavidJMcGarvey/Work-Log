@@ -123,7 +123,7 @@ def display_entry(row):
     Prints entry in uniform format
     """
     print("\n" + bw_start + "Task name: " + row['name'] + color_stop)
-    print(bw_start + "Task date: " + row['date'] + color_stop)
+    print(bw_start + "Task date: " + row['date'][:-9] + color_stop)
     print(bw_start + "Task minutes: " + row['time'] + color_stop)
     print(bw_start + "Task notes: " + row['note'] + color_stop + "\n")
 
@@ -241,14 +241,17 @@ def search_pattern():
     with open('log.csv', newline='') as csvfile:
         entry_info = ['name', 'date', 'time', 'note']
         log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-        search = re.findall(r'\w', search)
+        search = "r'" + search + "'"
+        results = []
+        import pdb; pdb.set_trace()
         for row in log_reader:
-            if search == row['name'] or row['date'] or row['time'] or row['note']:
-                display_entry(row)
+            if search == re.findall(search, log_reader):
+                result = row
+                results.append(row)
             else:
-                print(red_start + "\nSorry, regex pattern not found. Please try again." + color_stop)
-        search_menu()
+                print("Test")
 
+# re.findall(r'\w', search)
 
 def show_all():
     with open('log.csv', newline='') as csvfile:
