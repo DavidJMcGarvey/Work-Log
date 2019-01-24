@@ -19,12 +19,12 @@ Options if user selects a) Add New Entry:
     
 Options if user selects b) Search Existing Entry:
     - Exact Date
-    - Range of Dates
     - Exact Keyword
     - Regex Pattern
+    - Display All Entries
     - Return to Menu
 
 Program is terminated if user selects c) Quit Program
 
 
-David McGarvey 01/17/2019       
+David McGarvey 01/23/2019       
