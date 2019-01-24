@@ -30,7 +30,7 @@ def start_menu():
         elif task.lower() == 'b':
             search_menu()
         elif task.lower() == 'c':
-            print("Thanks for using this work log!")
+            print("Thanks for using the work log!")
             break
         else:
             print(red_start + "That was not an option" + color_stop)
@@ -241,17 +241,29 @@ def search_pattern():
     with open('log.csv', newline='') as csvfile:
         entry_info = ['name', 'date', 'time', 'note']
         log_reader = csv.DictReader(csvfile, fieldnames=entry_info, delimiter=',')
-        search = "r'" + search + "'"
+
+        rows = list(log_reader)
+        search = r'' + search
         results = []
-        import pdb; pdb.set_trace()
-        for row in log_reader:
-            if search == re.findall(search, log_reader):
+        for row in rows:
+            if re.search(search, row['name']):
                 result = row
                 results.append(row)
-            else:
-                print("Test")
+            elif search == row['note']:
+                result = row
+                results.append(row)
+            elif search != row['name'] and results == []:
+                result = None
+            elif search != row['note'] and results == []:
+                result = None
 
-# re.findall(r'\w', search)
+        if result:
+            display_entries(results)
+        else:
+            print(red_start + "\nSorry, nothing found with that pattern. Please try again." + color_stop)
+
+    return None
+
 
 def show_all():
     with open('log.csv', newline='') as csvfile:

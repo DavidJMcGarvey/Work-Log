@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="177" column="36" lean-forward="true" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+            <state relative-caret-position="363">
+              <caret line="252" column="44" lean-forward="true" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#76#299#0" />
@@ -27,10 +27,10 @@
                 <element signature="e#2068#2177#0" />
                 <element signature="e#2278#3153#0" />
                 <element signature="e#3110#3153#0" />
+                <element signature="e#3146#3526#0" />
                 <element signature="e#3734#4498#0" />
                 <element signature="e#4436#5257#0" />
                 <element signature="e#5282#6044#0" />
-                <element signature="e#6109#6797#0" />
                 <element signature="e#7422#7769#0" />
               </folding>
             </state>
@@ -87,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -152,15 +152,15 @@
       <workItem from="1546985673031" duration="3521000" />
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
-      <workItem from="1548100761007" duration="32480000" />
+      <workItem from="1548100761007" duration="39609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123710000" />
+    <option name="totallyTimeSpent" value="130839000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10138889" />
@@ -242,10 +242,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/1596495724/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="791" column="8" selection-start-line="791" selection-start-column="8" selection-end-line="791" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="177" column="36" lean-forward="true" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+        <state relative-caret-position="363">
+          <caret line="252" column="44" lean-forward="true" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#76#299#0" />
@@ -256,10 +263,10 @@
             <element signature="e#2068#2177#0" />
             <element signature="e#2278#3153#0" />
             <element signature="e#3110#3153#0" />
+            <element signature="e#3146#3526#0" />
             <element signature="e#3734#4498#0" />
             <element signature="e#4436#5257#0" />
             <element signature="e#5282#6044#0" />
-            <element signature="e#6109#6797#0" />
             <element signature="e#7422#7769#0" />
           </folding>
         </state>
