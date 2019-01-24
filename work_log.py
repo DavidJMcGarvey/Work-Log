@@ -246,7 +246,7 @@ def search_pattern():
     """
     Search based on regex pattern                                        
     """
-    search = input("Please select desired reg.exe pattern: ")
+    search = input("Please select desired regex pattern: ")
     entries = open_csv()
 
     search = r'' + search
