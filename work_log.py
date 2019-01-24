@@ -142,7 +142,12 @@ def search_menu():
     """
     while True:
         print("\nWhat would you like to search by?")
-        print("\na) By Date\nb) By Minutes\nc) By Keyword\nd) By Pattern\ne) Display All Entries\nf) Return to Menu\n")
+        print("\na) By Date"
+              "\nb) By Minutes"
+              "\nc) By Exact Keyword"
+              "\nd) By Regex Pattern"
+              "\ne) Show All Entries"
+              "\nf) Return to Menu\n")
         search_task = input("> ")
         if search_task.lower() == 'a':
             search_date()
