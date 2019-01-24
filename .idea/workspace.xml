@@ -15,11 +15,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="617">
+              <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#76#299#0" />
+                <element signature="e#412#872#0" />
                 <element signature="e#840#1225#0" />
                 <element signature="e#1310#1542#0" />
                 <element signature="e#1277#1677#0" />
@@ -29,7 +30,6 @@
                 <element signature="e#3547#3590#0" />
                 <element signature="e#3146#3526#0" />
                 <element signature="e#3734#4498#0" />
-                <element signature="e#4695#5264#0" />
                 <element signature="e#5299#5847#0" />
                 <element signature="e#6585#7364#0" />
                 <element signature="e#7198#7358#0" />
@@ -43,7 +43,11 @@
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -149,12 +153,12 @@
       <workItem from="1546985673031" duration="3521000" />
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
-      <workItem from="1548100761007" duration="42562000" />
+      <workItem from="1548100761007" duration="42766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133792000" />
+    <option name="totallyTimeSpent" value="133996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -227,11 +231,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="617">
+          <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#76#299#0" />
+            <element signature="e#412#872#0" />
             <element signature="e#840#1225#0" />
             <element signature="e#1310#1542#0" />
             <element signature="e#1277#1677#0" />
@@ -241,7 +246,6 @@
             <element signature="e#3547#3590#0" />
             <element signature="e#3146#3526#0" />
             <element signature="e#3734#4498#0" />
-            <element signature="e#4695#5264#0" />
             <element signature="e#5299#5847#0" />
             <element signature="e#6585#7364#0" />
             <element signature="e#7198#7358#0" />
@@ -253,7 +257,11 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
