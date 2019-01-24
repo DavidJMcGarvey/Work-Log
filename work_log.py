@@ -22,7 +22,9 @@ def start_menu():
     Opens menu with user options
     """
     while True:
-        print("\na) Add New Entry\nb) Search Existing Entry\nc) Quit Program\n")
+        print("\na) Add New Entry"
+              "\nb) Search Existing Entry"
+              "\nc) Quit Program\n")
         task = input("> ")
 
         if task.lower() == 'a':
