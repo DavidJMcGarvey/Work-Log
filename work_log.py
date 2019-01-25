@@ -2,11 +2,6 @@ import csv
 import datetime
 import re
 
-FMT = '%Y-%m-%d'
-red_start = "\33[91m"
-bw_start = "\33[37m\33[44m"
-color_stop = "\33[0m"
-
 
 def welcome():
     """
@@ -35,7 +30,7 @@ def start_menu():
             print("Thanks for using the work log!")
             break
         else:
-            print(red_start + "That was not an option" + color_stop)
+            print(red_err("That was not an option"))
 
 
 def write_csv(entry):
@@ -65,16 +60,45 @@ def open_csv():
         return entries
 
 
+def red_err(message):
+    """
+    Return error message with red font
+    """
+    red_start = "\33[91m"
+    color_stop = "\33[0m"
+    return red_start + message + color_stop
+
+
+def blue_row(task):
+    """
+    To entries, adds a white font against blue background :)
+    """
+    return "\33[37m\33[44m" + task + "\33[0m"
+
+
+def entry_name():
+    """
+    Returns a task name and doesn't allow for empty
+    """
+    while True:
+        entry_name = input("What is the title of the task? ")
+        if entry_name == '':
+            print(red_err("Please try again with a task name"))
+        else:
+            return entry_name
+
+
 def entry_date():
     """
     Ask user for their desired date and if date does not match format an error is raised asking them to try again
     """
+    fmt = '%Y-%m-%d'
     while True:
         try:
             date = input("What date was the task completed? Please use YYYY-MM-DD format. ")
-            return datetime.datetime.strptime(date, FMT)
+            return datetime.datetime.strptime(date, fmt)
         except ValueError:
-            print(red_start + "Please try again using proper format" + color_stop)
+            print(red_err("Please try again using proper format"))
 
 
 def entry_time():
@@ -86,35 +110,33 @@ def entry_time():
             time = abs(int(input("How many minutes did the task take? ")))
             return time
         except ValueError:
-            print(red_start + "Please try again using an integer to represent minutes spent on task." + color_stop)
+            print(red_err("Please try again using an integer to represent minutes spent on task."))
+
+
+def entry_note():
+    new_note = []
+    entry_notes = input("Would you like to add any additional notes? (optional) ")
+    if entry_notes != '':
+        new_note.append(entry_notes)
+    else:
+        new_note.append('')
+    return new_note
 
 
 def get_datetime(date):
     """
     Returns user given date as a datetime object
     """
-    return datetime.datetime.strptime(date, FMT)
+    fmt = '%Y-%m-%d'
+    return datetime.datetime.strptime(date, fmt)
 
 
 def add_entry():
     """
-    Takes user input and appends it to an empty list to be be written to CSV upon log completion
+    Takes user input from entry functions, put in list to be be written to CSV upon log completion
     """
-    new_entry = []
+    new_entry = [entry_name(), entry_date(), entry_time(), entry_note()]
 
-    entry_name = input("What is the title of the task? ")
-    new_entry.append(entry_name)
-
-    new_entry.append(entry_date())
-    
-    new_entry.append(entry_time())
-    
-    entry_notes = input("Would you like to add any additional notes? (optional) ")
-    if entry_notes != '':
-        new_entry.append(entry_notes)
-    else:
-        new_entry.append('')
-    
     write_csv(new_entry)
     
     return None
@@ -132,10 +154,10 @@ def display_entry(row):
     """
     Prints entry in uniform format
     """
-    print("\n" + bw_start + "Task name: " + row['name'] + color_stop)
-    print(bw_start + "Task date: " + row['date'][:-9] + color_stop)
-    print(bw_start + "Task minutes: " + row['time'] + color_stop)
-    print(bw_start + "Task notes: " + row['note'] + color_stop + "\n")
+    print("\n" + blue_row("Task name: " + row['name']))
+    print(blue_row("Task date: " + row['date'][:-9]))
+    print(blue_row("Task minutes: " + row['time']))
+    print(blue_row("Task notes: " + row['note']) + "\n")
 
 
 def search_menu():
@@ -164,7 +186,7 @@ def search_menu():
         elif search_task.lower() == 'f':
             return None
         else:
-            print(red_start + "That was not an option" + color_stop)
+            print(red_err("That was not an option"))
 
 
 def search_date():
@@ -184,7 +206,7 @@ def search_date():
             result = None
 
     if not result:
-        print(red_start + "\nSorry, date not found. Please try again." + color_stop)
+        print(red_err("\nSorry, date not found. Please try again."))
     else:
         display_entries(results)
             
@@ -207,7 +229,7 @@ def search_time():
             result = None
 
     if not result:
-        print(red_start + "\nSorry, no entries took that amount of time. Please try again." + color_stop)
+        print(red_err("\nSorry, no entries took that amount of time. Please try again."))
     else:
         display_entries(results)
 
@@ -237,7 +259,7 @@ def search_exact():
     if result:
         display_entries(results)
     else:
-        print(red_start + "\nSorry, no keyword found. Please try again." + color_stop)
+        print(red_err("\nSorry, no keyword found. Please try again."))
             
     return None
 
@@ -266,7 +288,7 @@ def search_pattern():
     if result:
         display_entries(results)
     else:
-        print(red_start + "\nSorry, nothing found with that pattern. Please try again." + color_stop)
+        print(red_err("\nSorry, nothing found with that pattern. Please try again."))
 
     return None
 

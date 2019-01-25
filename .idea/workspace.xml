@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +16,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="246" column="25" lean-forward="true" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+            <state relative-caret-position="598">
+              <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#148#371#0" />
+                <element signature="e#396#902#0" />
+                <element signature="e#931#1316#0" />
+                <element signature="e#1339#1644#0" />
+                <element signature="e#1661#1752#0" />
+                <element signature="e#1738#2049#0" />
+                <element signature="e#1669#2083#0" />
+                <element signature="e#2108#2506#0" />
+                <element signature="e#2886#3103#0" />
+                <element signature="e#2880#2989#0" />
+                <element signature="e#3013#3554#0" />
+                <element signature="e#3588#3701#0" />
+                <element signature="e#4079#4949#0" />
+                <element signature="e#4975#5545#0" />
+                <element signature="e#5575#6124#0" />
+                <element signature="e#6151#6836#0" />
+                <element signature="e#6865#7634#0" />
+                <element signature="e#7657#7855#0" />
               </folding>
             </state>
           </provider>
@@ -26,7 +45,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
@@ -60,6 +83,8 @@
       <find />
       <find>gbc_start</find>
       <find>yel_start + bbc_start</find>
+      <find>reg</find>
+      <find>not an</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -73,8 +98,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/log.csv" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/log.csv" />
         <option value="$PROJECT_DIR$/work_log.py" />
       </list>
     </option>
@@ -88,21 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-techdegree-project-03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-techdegree-project-03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -145,18 +156,18 @@
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
       <workItem from="1548100761007" duration="43057000" />
-      <workItem from="1548371748208" duration="771000" />
+      <workItem from="1548371748208" duration="4818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135058000" />
+    <option name="totallyTimeSpent" value="139105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22430556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13680555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -204,12 +215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -227,12 +232,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="246" column="25" lean-forward="true" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+        <state relative-caret-position="598">
+          <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#148#371#0" />
+            <element signature="e#396#902#0" />
+            <element signature="e#931#1316#0" />
+            <element signature="e#1339#1644#0" />
+            <element signature="e#1661#1752#0" />
+            <element signature="e#1738#2049#0" />
+            <element signature="e#1669#2083#0" />
+            <element signature="e#2108#2506#0" />
+            <element signature="e#2886#3103#0" />
+            <element signature="e#2880#2989#0" />
+            <element signature="e#3013#3554#0" />
+            <element signature="e#3588#3701#0" />
+            <element signature="e#4079#4949#0" />
+            <element signature="e#4975#5545#0" />
+            <element signature="e#5575#6124#0" />
+            <element signature="e#6151#6836#0" />
+            <element signature="e#6865#7634#0" />
+            <element signature="e#7657#7855#0" />
           </folding>
         </state>
       </provider>
