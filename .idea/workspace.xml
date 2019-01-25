@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_log.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ce0badf-2f8a-431f-8aa6-38ff3f118c77" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work_log.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+            <state relative-caret-position="323">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#148#371#0" />
@@ -25,6 +22,7 @@
                 <element signature="e#931#1316#0" />
                 <element signature="e#1339#1644#0" />
                 <element signature="e#1661#1752#0" />
+                <element signature="e#1740#1858#0" />
                 <element signature="e#1738#2049#0" />
                 <element signature="e#1669#2083#0" />
                 <element signature="e#2108#2506#0" />
@@ -32,6 +30,7 @@
                 <element signature="e#2880#2989#0" />
                 <element signature="e#3013#3554#0" />
                 <element signature="e#3588#3701#0" />
+                <element signature="e#3847#4112#0" />
                 <element signature="e#4079#4949#0" />
                 <element signature="e#4975#5545#0" />
                 <element signature="e#5575#6124#0" />
@@ -59,19 +58,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="532">
+              <first_editor relative-caret-position="513">
                 <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -85,6 +75,7 @@
       <find>yel_start + bbc_start</find>
       <find>reg</find>
       <find>not an</find>
+      <find>colo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -156,12 +147,12 @@
       <workItem from="1547052189226" duration="56733000" />
       <workItem from="1548089990736" duration="447000" />
       <workItem from="1548100761007" duration="43057000" />
-      <workItem from="1548371748208" duration="4818000" />
+      <workItem from="1548371748208" duration="5141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139105000" />
+    <option name="totallyTimeSpent" value="139428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -215,23 +206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="532">
-            <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
@@ -242,10 +216,27 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="513">
+            <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+        <state relative-caret-position="323">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#148#371#0" />
@@ -253,6 +244,7 @@
             <element signature="e#931#1316#0" />
             <element signature="e#1339#1644#0" />
             <element signature="e#1661#1752#0" />
+            <element signature="e#1740#1858#0" />
             <element signature="e#1738#2049#0" />
             <element signature="e#1669#2083#0" />
             <element signature="e#2108#2506#0" />
@@ -260,6 +252,7 @@
             <element signature="e#2880#2989#0" />
             <element signature="e#3013#3554#0" />
             <element signature="e#3588#3701#0" />
+            <element signature="e#3847#4112#0" />
             <element signature="e#4079#4949#0" />
             <element signature="e#4975#5545#0" />
             <element signature="e#5575#6124#0" />
